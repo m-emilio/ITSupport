@@ -1,1 +1,1 @@
-# PowerShell scripts for it support
+# PowerShell scripts for IT Support
