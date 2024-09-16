@@ -1,4 +1,4 @@
-#sample PowerShell script that collects system information and saves it to a file
+# PowerShell script that collects system information and saves it to a file
 
 #File Path: The script saves the report to C:\ITSupportReports with a timestamp in the filename.
 
