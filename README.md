@@ -1,4 +1,5 @@
-sample PowerShell script that collects system information and saves it to a file
+#sample PowerShell script that collects system information and saves it to a file
+
 #File Path: The script saves the report to C:\ITSupportReports with a timestamp in the filename.
 
 #System Information: It collects information about the computer name, OS version, memory, disk, CPU, and network adapters.
