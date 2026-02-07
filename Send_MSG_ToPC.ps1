@@ -1,7 +1,7 @@
-$computer = "misws01-1006"
+$computer = "HOSTNAME"
 $message = "Hello Test"
 $username = ".\administrator"
-$password = "Drowssap1"
+$password = "PASSWORD"
 
 $secstr = New-Object -TypeName System.Security.SecureString
 $password.ToCharArray() | ForEach-Object {$secstr.AppendChar($_)}
@@ -10,3 +10,4 @@ $cred = new-object -typename System.Management.Automation.PSCredential -argument
 Invoke-Command -ComputerName $computer -Credential $cred -ScriptBlock {
     msg * "$using:message"
 }
+
