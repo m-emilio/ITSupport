@@ -1,0 +1,1 @@
+Start-Process -FilePath "$env:Temp\MediaCreationTool.exe" -ArgumentList "/auto upgrade" -Wait
