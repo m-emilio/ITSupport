@@ -1,0 +1,11 @@
+Here's how the script works:
+
+The script first defines the registry path, name, and value for the Teams startup entry in the Windows registry.
+
+It then checks if the Teams startup entry already exists in the registry. If it does, the script disables the startup entry by setting its value to an empty string. If it doesn't exist, the script outputs a message saying that Teams startup is already disabled.
+
+The script uses the "Get-ItemProperty" cmdlet to check if the Teams startup entry exists in the registry. If it does, the script uses the "Set-ItemProperty" cmdlet to set the value of the registry entry to an empty string, effectively disabling Teams startup for all users.
+
+If the Teams startup entry doesn't exist in the registry, the script outputs a message saying that Teams startup is already disabled.
+
+Note that you'll need to replace "<user>" in the registry value with the appropriate username for your system. Additionally, you may need to run this script with administrative privileges to make changes to the registry.
