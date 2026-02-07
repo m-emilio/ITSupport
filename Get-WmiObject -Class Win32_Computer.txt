@@ -1,0 +1,3 @@
+Get-WmiObject -Class Win32_ComputerSystem | ForEach-Object {
+    ([System.Security.Principal.NTAccount]($_.Name + "\Administrator")).Translate([System.Security.Principal.SecurityIdentifier]).Value
+}
